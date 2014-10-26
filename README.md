@@ -70,9 +70,7 @@ ii) The following test data files are read into R and merged into one dataframe,
 - 'test/y_test.txt': Test labels.
 - 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
-iii) The two dataframes are then merged together. 
-
-    The resulting dataframe has 10299 observations and 563 variables.  
+iii) The two dataframes are then merged together. The resulting dataframe has 10299 observations and 563 variables.  
     
 ##### 2. Using Descriptive Activity Names to Name the Activities in the Dataset
 

@@ -76,10 +76,7 @@ ii) The following test data files are read into R and merged into one dataframe,
 
     The resulting dataframe has 2947 observations and 563 variables, including the id variables, subject and activity.
 
-iii) The two dataframes are then merged together. 
-(Note: The two dataframes each has 563 variables i.e. columns)
-
-    The resulting dataframe has 10299 observations and 563 variables.  
+iii) The two dataframes are then merged together. The resulting dataframe has 10299 observations and 563 variables.    
     
 ##### 2. Using Descriptive Activity Names to Name the Activities in the Dataset
 

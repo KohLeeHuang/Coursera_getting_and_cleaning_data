@@ -14,8 +14,8 @@ The R script "run_analysis.R" performs the following:
 3. Uses descriptive activity names to name the activities in the data set.
 4. Appropriately labels the data set with descriptive variable name. 
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  
-<br>  
- 
+<br>
+
 ### About the Original Data
 
 #### Data Source
@@ -28,7 +28,6 @@ Information on the source of the original data are given below:
 
 Human Activity Recognition Using Smartphones Dataset  
 Version 1.0  
-
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto, November 2012  
 Smartlab - Non Linear Complex Systems Laboratory  
 DITEN - Università degli Studi di Genova  
@@ -36,13 +35,11 @@ Via Opera Pia 11A, I-16145, Genoa, Italy
 activityrecognition@smartlab.ws  
 www.smartlab.ws  
 
-  
 #### The Experimental Design
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, the researchers captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
 Please refer to the 'README.txt' in the downloaded dataset for more details.
-
 
 #### Features Selection
 
@@ -53,7 +50,7 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
 
 The complete list of variables of each feature vector and corresponding information on the variables are available in the 'features.txt' and 'features_info.txt' respectively.  
-<br>  
+<br>
 
 ### Cleaning the Data
 
@@ -64,7 +61,7 @@ The complete list of variables of each feature vector and corresponding informat
 The merging of the training and the test sets were carried out in 3 stages:
 
 i) The following training data files are read into R and merged into one dataframe, train_df:
-(Note: all the files each have 7352 obs i.e. rows each)
+(Note: all the files each has 7352 obs i.e. rows each)
 - 'train/X_train.txt': Training set.
 - 'train/y_train.txt': Training labels.
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.  
@@ -72,7 +69,7 @@ i) The following training data files are read into R and merged into one datafra
     The resulting dataframe has 7352 observations and 563 variables, including the id variables, subject and activity, in the first and second columns.
 
 ii) The following test data files are read into R and merged into one dataframe, test_df:
-(Note: All the files each have 2947 obs i.e. rows)
+(Note: All the files each has 2947 obs i.e. rows)
 - 'test/X_test.txt': Test set.
 - 'test/y_test.txt': Test labels.
 - 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
@@ -80,10 +77,10 @@ ii) The following test data files are read into R and merged into one dataframe,
     The resulting dataframe has 2947 observations and 563 variables, including the id variables, subject and activity.
 
 iii) The two dataframes are then merged together. 
-(Note: The two dataframes each have 563 variables i.e. columns)
+(Note: The two dataframes each has 563 variables i.e. columns)
 
-    The resulting dataframe has 10299 observations of 563 variables.
-
+    The resulting dataframe has 10299 observations and 563 variables.  
+    
 ##### 2. Using Descriptive Activity Names to Name the Activities in the Dataset
 
 Activity_labels.txt is read into R and the descriptive activity names in the file are transformed to all lower case and used to replace the activity codes (1-6) in the second column of the merged dataframe.
@@ -111,7 +108,7 @@ The dataframe created from Step 4 above is melted and recasted to create a secon
 The tidy dataset has 180 observations of 68 variables, including the id variables, subject and activity.
 
 The tidy dataset is then written to a text file, "*tidydata.txt*".  
-<br>  
+<br>
 
 ### Description of the Tidy Dataset
 

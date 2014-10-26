@@ -72,8 +72,8 @@ ii) The following test data files are read into R and merged into one dataframe,
 
 iii) The two dataframes are then merged together. 
 
-     The resulting dataframe has 10299 observations of 563 variables.
-
+    The resulting dataframe has 10299 observations and 563 variables.  
+    
 ##### 2. Using Descriptive Activity Names to Name the Activities in the Dataset
 
 Activity_labels.txt is read into R and the descriptive activity names in the file are transformed to all lower case and used to replace the activity codes (1-6) in the second column of the merged dataframe.  The new activity names in the merged dataframe are: walking, walking_upstairs, walking_downstairs, sitting, standing, and laying.

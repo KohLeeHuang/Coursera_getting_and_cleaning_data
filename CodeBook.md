@@ -24,20 +24,18 @@ The dataset is downloaded from the following link:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-Information on the source of the original data are given below:
+Information on the source of the original data are given below:  
 
-==================================================================  
 Human Activity Recognition Using Smartphones Dataset  
 Version 1.0  
-==================================================================  
+
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto, November 2012  
 Smartlab - Non Linear Complex Systems Laboratory  
 DITEN - Università degli Studi di Genova  
 Via Opera Pia 11A, I-16145, Genoa, Italy  
 activityrecognition@smartlab.ws  
 www.smartlab.ws  
-==================================================================  
-  
+
   
 #### The Experimental Design
 
@@ -84,7 +82,7 @@ ii) The following test data files are read into R and merged into one dataframe,
 iii) The two dataframes are then merged together. 
 (Note: The two dataframes each have 563 variables i.e. columns)
 
-    The resulting dataframe, merged_df, has 10299 observations of 563 variables.
+    The resulting dataframe has 10299 observations of 563 variables.
 
 ##### 2. Using Descriptive Activity Names to Name the Activities in the Dataset
 
